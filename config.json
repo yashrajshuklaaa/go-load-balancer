@@ -1,0 +1,11 @@
+{
+  "port": "8080",
+  "health_check_path": "/health",
+  "health_check_interval_seconds": 10,
+  "algorithm": "round_robin",
+  "backends": [
+    { "url": "http://localhost:9001", "weight": 1 },
+    { "url": "http://localhost:9002", "weight": 2 },
+    { "url": "http://localhost:9003", "weight": 1 }
+  ]
+}
